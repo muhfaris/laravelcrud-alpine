@@ -8,7 +8,7 @@ COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 RUN adduser -D -S userbaru
 USER userbaru
 RUN cd /home/userbaru \
-&& git clone https://github.com/mul14/laravel-crud-demo.git \
+&& git clone https://github.com/muhfaris/laravel-crud-demo.git \
 && mv laravel-crud-demo laravel \
 && cd laravel \
 && composer install \
